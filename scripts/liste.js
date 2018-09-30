@@ -99,5 +99,5 @@ function calculTotal(){
 
 //FONCTION  -  Pour arrondir les prix à deux décimal prêt
 function roundToTwo(num) {    
-    return +(Math.round(num + "e+2")  + "e-2");
+    return num.toFixed(2);
 }
