@@ -1,0 +1,136 @@
+<!-- Par Jonathan Vroye - P1161427 -->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8" />
+        <Title>Selection de repas</Title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="scripts/data.js"></script>
+        <script src="scripts/liste.js"></script>
+
+    </head>
+
+    
+    <body onload="chargerListes()">
+
+        <!-- Section de l'en-tete, incluant info sur cours et etudiant -->
+        <header>
+
+                <h2 class="left">
+                    Cours IFT1142 <br>
+                    Menu
+                </h2>
+
+
+                <h3 class="right">
+                    Travail pratique #1 <br>
+                    par Jonathan Vroye <br>
+                    P1161427
+                </h3>
+            
+        </header>
+
+
+
+
+        <main>
+
+            <!-- Section du contenu principal; choix et menu -->
+            <div id="main">
+
+                <h1>Restaurant aux délices du IFT1142</h1>
+
+                <h3>Votre choix:</h3>
+                
+
+                <!-- Section des elements SELECT, les 2 listes defilantes -->
+                <div id = "select">
+
+
+
+                    <!-- Section liste deroulante des entrees -->
+                    <div class=left>
+                        <span>Entrée: </span>
+
+                        <select onchange="chargerEntree()" id="entree"> </select>
+                        
+                        <A HREF="#" >
+                            <IMG ID="imageEntree" HEIGHT=150 SRC="images/vide.jpg" WIDTH=150 alt="Image de l'entrée">
+                        </A>
+
+                        <span id="prixEntree"></span>
+                    </div>
+
+                    <!-- Section liste deroulante des repas -->
+                    <div class=right>
+                        <span>Repas: </span>
+
+                        <select onchange="chargerRepas()" id="repas"></select>
+
+                        <A HREF="#" >
+                                <IMG ID="imageRepas" HEIGHT=150 SRC="images/vide.jpg" WIDTH=150 alt="Image du repas">
+                        </A>
+
+                        <span id="prixRepas"></span>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- Section - Calcul des montants -->
+            <h3 id=montant>
+
+                <span class=def>Sous-Total: </span>
+                <span id=soustotal></span>
+                <span>$</span>
+
+                <span class=def>Taxes: </span>
+                <span id=taxes></span>
+                <span>$</span>
+
+                <span class=def>Total: </span>
+                <span id=total></span>
+                <span>$</span>
+
+            </h3>
+
+        </main>
+
+
+
+
+
+        <hr/>
+
+        <!-- Section de pied de page avec les validations HTML et CSS de W3C -->
+        <footer>
+
+            <span class=left>
+                <a href="http://validator.w3.org/check?uri=referer">
+                        <img src="http://www.w3.org/html/logo/badge/html5-badge-h-semantics.png"
+                            width="89" height="43" 
+                            alt="HTML5 Powered with Semantics"
+                            title="HTML5 Powered with Semantics"/></a>
+            </span>
+
+            <span class=right>
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border:0;width:88px;height:31px"
+                            src="http://jigsaw.w3.org/css-validator/images/vcss"
+                            alt="Valid CSS!" />
+                    </a>       
+            </span>
+
+        </footer>
+
+
+    </body>
+
+
+</html>

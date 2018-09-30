@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/* Par Jonathan Vroye - P1161427 */
+
+
+
+/* Attribut couleur et font, tel que spécifié dans TP1 */
+h1 { 
+    color: blue;
+    text-align: center; 
+}
+
+h2 { 
+    color: red;
+}
+
+h3 { 
+    color: green;
+    font-style: italic;
+}
+
+#select{
+    color: blue;
+    font-size: 120%;
+}
+
+
+
+/* Alignement des boites HTML du contenu avec float*/
+.left{
+    display: inline;
+    float:left;
+}
+
+.right{
+    display:inline;
+    float:right;
+    text-align: right;
+}
+
+#main {
+        clear: both;
+        text-align: center;
+        padding-right: 10%;
+        padding-left: 10%;
+}
+
+#montant {
+    clear: both;
+    text-align: left;
+    padding-top: 20px
+}
+
+
+
+/* Padding spécifique pour mise en page des montants */
+#montant .def{
+    padding-left: 15px;
+}
